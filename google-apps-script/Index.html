@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Resmi MKKS SD Kecamatan Pasirwangi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="bg-gradient-to-tr from-sky-500 to-indigo-600 p-2 rounded-xl text-white">
+          <i class="bi bi-bank text-lg"></i>
+        </div>
+        <div>
+          <span class="font-bold text-base block leading-none">MKKS SD Pasirwangi</span>
+          <span class="text-[10px] text-blue-600 font-bold uppercase mt-1 block">Pasirwangi, Garut</span>
+        </div>
+      </div>
+      <a href="?page=login" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition shadow">
+        Login Sistem
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative py-24 px-6 text-center bg-slate-950 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-indigo-900 via-slate-950 to-slate-950 opacity-90"></div>
+    <div class="max-w-3xl mx-auto relative z-10 space-y-6">
+      <span class="bg-blue-500/15 border border-blue-400/20 text-blue-400 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1.5 rounded-full">Musyawarah Kerja Kepala Sekolah</span>
+      <h1 class="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+        Portal Resmi MKKS SD<br>Kecamatan Pasirwangi
+      </h1>
+      <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+        Sinergisitas dan komitmen Kepala Sekolah Dasar se-Kecamatan Pasirwangi untuk mewujudkan kepemimpinan yang berintegritas dan mutu pendidikan dasar unggul.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="?page=login" class="bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 font-bold px-7 py-3 rounded-xl text-xs transition shadow-lg">Login Portal MKKS</a>
+        <a href="#about-sec" class="bg-white/10 hover:bg-white/15 border border-white/20 font-bold px-7 py-3 rounded-xl text-xs transition">Tentang Kami</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section with the Pinterest background GIF -->
+  <section id="about-sec" class="py-20 px-6 bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.92), rgba(15,23,42,0.95)), url('https://i.pinimg.com/originals/7f/26/98/7f2698c08e414c0222c86195ebdfd274.gif'); background-attachment: fixed;">
+    <div class="max-w-5xl mx-auto text-white grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-7 space-y-4">
+        <span class="text-xs text-blue-400 font-bold uppercase tracking-wider">Tentang Organisasi</span>
+        <h2 class="text-2xl md:text-3.5xl font-extrabold tracking-tight leading-tight">Membangun Kolaborasi Kependidikan Se-Pasirwangi</h2>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          Wadah pemersatu para pimpinan lembaga pendidikan dasar tingkat kecamatan yang aktif mendorong integrasi standard mutu kelulusan, penataan ARKAS, digitalisasi, serta pendampingan program dana BOSP.
+        </p>
+      </div>
+      <div class="md:col-span-5 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md space-y-4">
+        <div>
+          <h3 class="font-bold text-sm text-blue-400 flex items-center gap-1.5"><i class="bi bi-award"></i> VISI</h3>
+          <p class="text-slate-300 text-xs mt-1 leading-relaxed">Kepemimpinan sekolah dasar yang profesional, inovatif, dan komunikatif di Kabupaten Garut.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-sm text-blue-400 flex items-center gap-1.5"><i class="bi bi-book"></i> MISI</h3>
+          <p class="text-slate-300 text-xs mt-1 leading-relaxed">Mengembangkan profesionalitas manajerial, standardisasi ujian rayon, dan memperkuat relasi kelembagaan dinas terkait.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-slate-900 border-t border-slate-800 text-slate-500 text-xs py-8 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <span>&copy; 2026 MKKS SD Kecamatan Pasirwangi, Kabupaten Garut. All Rights Reserved.</span>
+      <span class="font-medium">Mendidik Generasi Membina Pemimpin Masa Depan</span>
+    </div>
+  </footer>
+
+</body>
+</html>

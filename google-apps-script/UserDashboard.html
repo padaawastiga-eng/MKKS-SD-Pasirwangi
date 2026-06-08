@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Anggota | MKKS SD Pasirwangi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Navbar -->
+  <nav class="fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-sky-600 to-indigo-700 text-white flex items-center justify-between px-6 shadow-md z-40">
+    <div class="flex items-center gap-2">
+      <i class="bi bi-bank2 text-lg text-sky-200"></i>
+      <span class="font-extrabold tracking-tight text-sm">Portal Kepala Sekolah SD</span>
+    </div>
+
+    <div class="flex items-center gap-4 text-xs font-bold text-white">
+      <div class="flex items-center gap-2 bg-white/10 p-1 px-3.5 rounded-full border border-white/20">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>Ahmad Sodikin, S.Pd.</span>
+      </div>
+      <a href="?page=home" class="bg-red-500 hover:bg-red-600 px-3 py-1.5 rounded-lg text-white font-semibold transition">
+        Logout
+      </a>
+    </div>
+  </nav>
+
+  <!-- Sidebar & Main grid -->
+  <div class="pt-16 flex flex-1">
+    <!-- Navigation Sidebar -->
+    <aside class="w-64 bg-slate-900 text-slate-300 border-r border-slate-800 p-4 shrink-0 hidden md:block">
+      <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block px-3.5 mb-2.5 font-sans">Menu Anggota</span>
+      <ul class="space-y-1 text-xs">
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 bg-blue-600 text-white rounded-xl font-bold">
+            <i class="bi bi-file-earmark-richtext"></i>
+            <span>Dashboard & Memo</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 hover:bg-slate-800 rounded-xl transition">
+            <i class="bi bi-calendar"></i>
+            <span>Agenda & Surat</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 hover:bg-slate-800 rounded-xl transition">
+            <i class="bi bi-mailbox"></i>
+            <span>Hubungi Sekretariat</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-6 space-y-6">
+      
+      <div class="bg-blue-50/50 border border-blue-200 rounded-2xl p-5">
+        <h1 class="text-lg font-black text-slate-800">Selamat Datang, Ahmad Sodikin, S.Pd.!</h1>
+        <p class="text-xs text-slate-505">Anda memiliki otorisasi akses penuh ke seluruh direktori surat resmi MKKS Pasirwangi.</p>
+      </div>
+
+      <!-- Main responsive cards: Rapat & Dokumen -->
+      <div class="grid md:grid-cols-2 gap-6 text-xs">
+        
+        <!-- Jadwal Rapat Terdekat -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3.5">
+          <div class="flex items-center gap-2 text-blue-600 font-bold">
+            <i class="bi bi-calendar-event"></i>
+            <span>Jadwal Rapat Terdekat</span>
+          </div>
+          
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-150 space-y-2">
+            <span class="block font-bold text-slate-800">Rapat Pleno Koordinasi Pemantapan Pihak Sekolah Dasar Semester II</span>
+            <div class="text-[11px] text-slate-500">
+              <strong>Mulai:</strong> Senin, 15 Juni 2026 pukul 09.00 WIB<br/>
+              <strong>Tempat:</strong> Aula SDN 1 Pasirwangi
+            </div>
+            <button onclick="alert('Membuka pratinjau surat...')" class="mt-2 bg-blue-600 text-white font-semibold px-4 py-1 rounded transition text-[11px]">
+              Lihat Undangan
+            </button>
+          </div>
+        </div>
+
+        <!-- Dokumen / Edaran Terbaru -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3.5">
+          <div class="flex items-center gap-2 text-emerald-600 font-bold">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Arsip & Panduan Terbaru</span>
+          </div>
+          
+          <div class="space-y-2">
+            <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
+              <span>Panduan Penggunaan Dana BOSP 2026.pdf</span>
+              <button onclick="alert('Menginstall berkas...')" class="text-emerald-600 hover:text-emerald-800"><i class="bi bi-download"></i></button>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
+              <span>Risalah Kesepakatan Lulusan (Mei 26).pdf</span>
+              <button onclick="alert('Menginstall berkas...')" class="text-emerald-600 hover:text-emerald-800"><i class="bi bi-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

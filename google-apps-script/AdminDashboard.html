@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | MKKS SD Pasirwangi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Navbar -->
+  <nav class="fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-sky-600 to-indigo-700 text-white flex items-center justify-between px-6 shadow-md z-40">
+    <div class="flex items-center gap-2">
+      <i class="bi bi-bank2 text-lg text-sky-200"></i>
+      <span class="font-extrabold tracking-tight text-sm">MKKS Pasirwangi Admin</span>
+    </div>
+
+    <div class="flex items-center gap-4 text-xs font-bold text-white">
+      <div class="flex items-center gap-2.5 bg-white/10 p-1 px-3.5 rounded-full border border-white/20">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span>Admin Utama</span>
+      </div>
+      <a href="?page=home" class="bg-red-500 hover:bg-red-600 px-3 py-1.5 rounded-lg text-white font-semibold transition">
+        Logout
+      </a>
+    </div>
+  </nav>
+
+  <!-- Sidebar & Main grid -->
+  <div class="pt-16 flex flex-1">
+    <!-- Navigation Sidebar -->
+    <aside class="w-64 bg-slate-900 text-slate-300 border-r border-slate-800 p-4 shrink-0 hidden md:block">
+      <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block px-3.5 mb-2.5">Navigasi Utama</span>
+      <ul class="space-y-1 text-xs">
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 bg-blue-600 text-white rounded-xl font-bold">
+            <i class="bi bi-grid-fill"></i>
+            <span>Dashboard Menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 hover:bg-slate-800 rounded-xl transition">
+            <i class="bi bi-buildings"></i>
+            <span>Kelembagaan</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 hover:bg-slate-800 rounded-xl transition">
+            <i class="bi bi-calendar-event"></i>
+            <span>Agenda Kegiatan</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-3 px-3.5 py-2.5 hover:bg-slate-800 rounded-xl transition">
+            <i class="bi bi-people"></i>
+            <span>Pengaturan User</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-6 space-y-6">
+      
+      <div>
+        <h1 class="text-xl font-black text-slate-900 leading-none">Dashboard Ringkasan GAS</h1>
+        <p class="text-xs text-slate-500 mt-1">Status capaian program kerja dan pilar pembinaan Sekolah Dasar</p>
+      </div>
+
+      <!-- Color cards row -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-blue-600 text-white p-5 rounded-2xl shadow-md">
+          <div class="flex justify-between items-start">
+            <i class="bi bi-buildings text-xl"></i>
+            <span class="text-2xl font-black">12</span>
+          </div>
+          <span class="block text-xs font-bold mt-4">Total Sekolah</span>
+        </div>
+
+        <div class="bg-teal-600 text-white p-5 rounded-2xl shadow-md">
+          <div class="flex justify-between items-start">
+            <i class="bi bi-person-workspace text-xl"></i>
+            <span class="text-2xl font-black">10</span>
+          </div>
+          <span class="block text-xs font-bold mt-4">Jumlah KS</span>
+        </div>
+
+        <div class="bg-orange-600 text-white p-5 rounded-2xl shadow-md">
+          <div class="flex justify-between items-start">
+            <i class="bi bi-people text-xl"></i>
+            <span class="text-2xl font-black">15</span>
+          </div>
+          <span class="block text-xs font-bold mt-4">User Aktif</span>
+        </div>
+
+        <div class="bg-purple-700 text-white p-5 rounded-2xl shadow-md">
+          <div class="flex justify-between items-start">
+            <i class="bi bi-calendar-check text-xl"></i>
+            <span class="text-2xl font-black">3</span>
+          </div>
+          <span class="block text-xs font-bold mt-4">Total Agenda</span>
+        </div>
+
+      </div>
+
+      <!-- Charts & Tables placeholder in GAS -->
+      <div class="grid lg:grid-cols-12 gap-6 text-xs">
+        
+        <div class="lg:col-span-8 bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-4">
+          <span class="font-bold text-slate-800 block text-xs">Capaian & Realisasi Kerja</span>
+          <p class="text-slate-500 text-xs">Rasio penyelesaian program kependidikan di internal Pasirwangi tercantum sebesar <strong class="text-blue-600">85%</strong> pada semester berjalan ini.</p>
+          
+          <div class="w-full bg-slate-100 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+          <span class="font-bold text-slate-800 block text-xs">Kalender Anggota (Juni 2026)</span>
+          <div class="grid grid-cols-7 gap-1 text-center font-bold text-[10px] text-slate-400">
+            <span>M</span><span>S</span><span>S</span><span>R</span><span>K</span><span>J</span><span>S</span>
+          </div>
+          <div class="grid grid-cols-7 gap-1 text-center font-medium duration-100">
+            <!-- Mock visual grid numbers -->
+            <span class="text-slate-350">31</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+            <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+            <span>14</span><span class="bg-blue-600 text-white rounded font-bold">15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+            <span>21</span><span class="bg-blue-600 text-white rounded font-bold">22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+            <span>28</span><span>29</span><span>30</span><span class="text-slate-350">1</span><span class="text-slate-350">2</span><span class="text-slate-350">3</span><span class="text-slate-350">4</span>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Portal MKKS SD Pasirwangi",
+  "description": "Portal Resmi Musyawarah Kerja Kepala Sekolah (MKKS) SD Kecamatan Pasirwangi",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
